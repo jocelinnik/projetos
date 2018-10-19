@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+	sans-serif;
+	line-height: 1.6;
+	background-color: #ADD8E6;
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 98%;
+	height: 98%;
+}
+
+h3,p{
+	text-align: center;
+}
+
+
+.place{
+	margin: 0 auto;
+	width: 98%;
+	height: 99%;
+	font-size: 0.9em
+}
+.place table{
+	font-size: 0.7em
+}
+
+.button {
+	background-color: #000080;
+	color: white;
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+.small-button {
+	font-size: 0.7em;
+}
+
+
+
+
