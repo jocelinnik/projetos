@@ -4,21 +4,25 @@
 		<meta charset="UTF-8">
 		<title>Alterações Orçamentárias</title>
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
+		<link rel="stylesheet" href="normalize.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="prefixfree.min.js"></script>
 	</head>
 
 	<body>
 
 		<div class='container'>
+			<br>
 			<h3> Alterações Orçamentárias</h3>
 			<script src="jquery.min.js"></script>
 
 			<form action='banco.php' method='post'>
 
-				<h5>Recurso Disponível
+				<div align="right">
+					<h5>Recurso Disponível
 					<input class="campo" type="text" name="rDisponivel">
 				</h5>
+				</div>
 				
 
 			<div class="place">
@@ -110,6 +114,8 @@
 			        			<th>Nº Item</th>
 			        			<th>Localidade</th>
 			        			<th>Quantidade</th>
+			        			<th>Custo Unitário</th>
+			        			<th>Custo Total</th>
 			        			<th>Custo Unitário em R$</th>
 			        			<th>Custo Total em R$</th>
 			        			<th>Valor Gasto</th>
@@ -132,6 +138,12 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="cTotal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cUnitReal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cTotalReal">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="vGasto">
@@ -163,6 +175,12 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="cTotal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cUnitReal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cTotalReal">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="vGasto">
@@ -268,6 +286,8 @@
 			        			<th>Nº Item</th>
 			        			<th>Localidade</th>
 			        			<th>Quantidade</th>
+			        			<th>Custo Unitário</th>
+			        			<th>Custo Total</th>
 			        			<th>Custo Unitário em R$</th>
 			        			<th>Custo Total em R$</th>
 			        			<th>Valor Gasto</th>
@@ -290,6 +310,12 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="cTotal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cUnitReal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cTotalReal">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="vGasto">
@@ -321,6 +347,12 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="cTotal">
+					          			</td>
+					          			<td>
+					        				<input class="campo" type="text" name="cUnitReal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cTotalReal">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="vGasto">
@@ -346,6 +378,8 @@
 					        			<th>Nº Item</th>
 					        			<th>Especificação</th>
 					        			<th>Quantidade</th>
+					        			<th>Custo Unitário</th>
+			        					<th>Custo Total</th>
 					        			<th>Valor Gasto</th>
 					        			<th>Valor Disponível</th>
 					        			<th>Professor Responsável</th>
@@ -360,6 +394,12 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="number" name="quantidade">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cUnitario">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cTotal">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="vGasto">
@@ -385,6 +425,12 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="number" name="quantidade">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cUnitario">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cTotal">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="vGasto">
@@ -412,6 +458,9 @@
 			        			<th>Especificação</th>
 			        			<th>Custo Unitário</th>
 			        			<th>Custo Total</th>
+			        			<th>Valor Gasto</th>
+					        	<th>Valor Disponível</th>
+					        	<th>Professor Responsável</th>
 			        			<th>Justificativa</th>
     						</tr>
 							<tr>
@@ -426,6 +475,15 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="cTotal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="vGasto">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="vDisponivel">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="responsavel">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="justificativa">
@@ -446,6 +504,15 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="cTotal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="vGasto">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="vDisponivel">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="responsavel">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="justificativa">
@@ -465,6 +532,9 @@
 			        			<th>Especificação</th>
 			        			<th>Custo Unitário</th>
 			        			<th>Custo Total</th>
+			        			<th>Valor Gasto</th>
+					        	<th>Valor Disponível</th>
+					        	<th>Professor Responsável</th>
 			        			<th>Justificativa</th>
     						</tr>
 							<tr>
@@ -479,6 +549,15 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="cTotal">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="vGasto">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="vDisponivel">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="responsavel">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="justificativa">
@@ -501,6 +580,15 @@
 					        				<input class="campo" type="text" name="cTotal">
 					        			</td>
 					        			<td>
+					        				<input class="campo" type="text" name="vGasto">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="vDisponivel">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="responsavel">
+					        			</td>
+					        			<td>
 					        				<input class="campo" type="text" name="justificativa">
 					        			</td>
 					        			<td><a href="#" class='button small-button'>Adicionar</a></td>
@@ -515,6 +603,8 @@
 					        			<th>Nº Item</th>
 					        			<th>Especificação</th>
 					        			<th>Quantidade</th>
+					        			<th>Custo Unitario</th>
+					        			<th>Custo Total</th>
 					        			<th>Valor Gasto</th>
 					        			<th>Valor Disponível</th>
 					        			<th>Professor Responsável</th>
@@ -529,6 +619,12 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="number" name="quantidade">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cUnitario">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cTotal">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="vGasto">
@@ -554,6 +650,12 @@
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="number" name="quantidade">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cUnitario">
+					        			</td>
+					        			<td>
+					        				<input class="campo" type="text" name="cTotal">
 					        			</td>
 					        			<td>
 					        				<input class="campo" type="text" name="vGasto">
